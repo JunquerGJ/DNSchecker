@@ -22,6 +22,7 @@ func worker(dnsServers chan string, wg *sync.WaitGroup){
 		wg.Done()
 	}
 }
+//
 
 func main() {
 	dnsServers := make(chan string, 1000)
